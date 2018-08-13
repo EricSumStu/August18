@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent homeIntent = new Intent(MainActivity.this, MapsViewActivity.class);
+                Intent homeIntent = new Intent(MainActivity.this, SecondScreenActivity.class);
                 startActivity(homeIntent);
                 finish();
             }
