@@ -12,7 +12,7 @@ public class SecondScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
-        Button button1 = findViewById(R.id.button1);
+        Button button1 = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button2);
 
     button1.setOnClickListener ((View v) -> {
