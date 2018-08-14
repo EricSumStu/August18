@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FullMapActivity" />
-        >
         <activity android:name=".SecondScreenActivity" />
-        <activity android:name=".DesksPage"></activity>
+        <activity android:name=".FullMapActivity" />
+        <activity android:name=".DesksPage"/>
     </application>
 
 </manifest>

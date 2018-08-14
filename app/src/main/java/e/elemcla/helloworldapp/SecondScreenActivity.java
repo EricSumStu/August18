@@ -12,25 +12,27 @@ public class SecondScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
-        Button button1 = findViewById(R.id.button);
-        Button button2 = findViewById(R.id.button2);
+        Button theMapButton = (Button) findViewById(R.id.mapButton);
+        Button theDesksButton = (Button) findViewById(R.id.desksButton);
 
-    button1.setOnClickListener ((View v) -> {
-            goToSecondActivity();
-    });
+        theMapButton.setOnClickListener(new View.OnClickListener() {
 
-    button2.setOnClickListener ((View v) -> {
-            goToThirdActivity();
-    });
-}
-    private void goToSecondActivity()
-    {
-        Intent intent = new Intent(this, FullMapActivity.class);
-        startActivity(intent);
-    }
-    private void goToThirdActivity()
-    {
-        Intent intent = new Intent(this, DesksPage.class);
-        startActivity(intent);
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent mapIntent = new Intent(SecondScreenActivity.this,FullMapActivity.class);
+                startActivity(mapIntent);
+            }
+        });
+
+        theDesksButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent deskIntent = new Intent(SecondScreenActivity.this,DesksPage.class);
+                startActivity(deskIntent);
+            }
+        });
     }
 }

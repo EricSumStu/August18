@@ -7,24 +7,24 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/mapButton"
         style="@android:style/Widget.Button"
-        android:backgroundTint="#002561"
         android:layout_width="270dp"
         android:layout_height="118dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="Maps"
+        android:backgroundTint="#002561"
         android:fontFamily="@font/ericsson_font"
-        android:textSize="50sp"
+        android:text="Map"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/desksButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/desksButton"
         android:layout_width="270dp"
         android:backgroundTint="#002561"
         android:layout_height="118dp"
