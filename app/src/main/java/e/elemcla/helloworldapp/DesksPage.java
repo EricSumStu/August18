@@ -1,8 +1,11 @@
 package e.elemcla.helloworldapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class DesksPage extends AppCompatActivity {
@@ -26,5 +29,15 @@ public class DesksPage extends AppCompatActivity {
         //set the spinners adapter to the previously created one.
         fromDropDown.setAdapter(adapter);
         toDropDown.setAdapter(adapter);
+
+        Button GoMainPagebutton = (Button) findViewById(R.id.GoMainPagebutton);
+        GoMainPagebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goMainPage = new Intent(DesksPage.this,SecondScreenActivity.class);
+                startActivity(goMainPage);
+
+            }
+        });
     }
 }
