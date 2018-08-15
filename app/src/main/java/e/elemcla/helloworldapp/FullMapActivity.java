@@ -14,11 +14,11 @@ public class FullMapActivity extends AppCompatActivity{
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_full_map);
 
-            ImageView theMap = (ImageView) findViewById(R.id.fullInternalMap);
+            ImageView imageView = (ImageView) findViewById(R.id.fullInternalMap);
 
             Glide
                     .with(this)
-                    .load(R.drawable.anothermap)
-                    .into(theMap);
+                    .load(R.drawable.ericssonmapwhitebackgroundcroppp)
+                    .into(imageView);
         }
     }
