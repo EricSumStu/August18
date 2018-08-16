@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/zoneEightStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="108dp"
@@ -36,8 +36,8 @@
 
     <ImageView
         android:id="@+id/zoneEightEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="108dp"
@@ -52,8 +52,8 @@
 
     <ImageView
         android:id="@+id/zoneNineStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="8dp"
@@ -68,8 +68,8 @@
 
     <ImageView
         android:id="@+id/zoneNineEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="26dp"
         android:layout_marginEnd="104dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
