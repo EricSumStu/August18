@@ -94,16 +94,4 @@
         app:layout_constraintTop_toBottomOf="@+id/toDropDown"
         app:layout_constraintVertical_bias="0.862" />
 
-    <Button
-        android:id="@+id/GoMainPagebutton"
-        android:layout_width="175dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#002561"
-        android:fontFamily="@font/ericsson_font"
-        android:text="Go to MainPage"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="3dp" />
-
 </android.support.constraint.ConstraintLayout>
