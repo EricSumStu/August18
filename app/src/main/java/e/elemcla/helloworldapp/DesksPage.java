@@ -10,10 +10,13 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 public class DesksPage extends AppCompatActivity {
+    static String firstOption;
+    static String secondOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_desks_page);
 
         if (getSupportActionBar() != null ) {
@@ -26,7 +29,7 @@ public class DesksPage extends AppCompatActivity {
         Spinner toDropDown = findViewById(R.id.toDropDown);
 
         //create list of zones for the spinners.
-        String[] zones = new String[]{"Zone 1", "Zone 2", "Zone 3","Zone 4","Zone 5","Zone 6","Zone 7" };
+        String[] zones = new String[]{"Zone 1", "Zone 2", "Zone 3","Zone 4","Zone 5","Zone 6","Zone 7","Zone 8","Zone 9"};
 
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
@@ -35,13 +38,32 @@ public class DesksPage extends AppCompatActivity {
         //set the spinners adapter to the previously created one.
         fromDropDown.setAdapter(adapter);
         toDropDown.setAdapter(adapter);
+        Button theGoButton = findViewById(R.id.goButton);
 
-        Button GoMainPagebutton = (Button) findViewById(R.id.GoMainPagebutton);
-        GoMainPagebutton.setOnClickListener(new View.OnClickListener() {
+        theGoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goMainPage = new Intent(DesksPage.this,SecondScreenActivity.class);
-                startActivity(goMainPage);
+                firstOption = (String) fromDropDown.getSelectedItem();
+                secondOption = (String) toDropDown.getSelectedItem();
+
+                if (firstOption.equals("Zone 1") || firstOption.equals("Zone 2") || firstOption.equals("Zone 3") || firstOption.equals("Zone 4") || firstOption.equals("Zone 5") || firstOption.equals("Zone 6") || firstOption.equals("Zone 7")
+                        && secondOption.equals("Zone 1") || secondOption.equals("Zone 2") || secondOption.equals("Zone 3") || secondOption.equals("Zone 4") || secondOption.equals("Zone 5") || secondOption.equals("Zone 6") || secondOption.equals("Zone 7")){
+
+                    Intent goToGroundFloorRouteActivity = new Intent(DesksPage.this,GroundFloorRouteActivity.class);
+                    startActivity(goToGroundFloorRouteActivity);
+                }
+
+                else if (firstOption.equals("Zone 8") || firstOption.equals("Zone 9") && secondOption.equals("Zone 8") || secondOption.equals("Zone 9")){
+
+                    Intent goToFirstFloorRouteActivity = new Intent(DesksPage.this,FirstFloorRouteActivity.class);
+                    startActivity(goToFirstFloorRouteActivity);
+                }
+                else {
+                    Intent goToMap = new Intent(DesksPage.this,FullMapActivity.class);
+                    startActivity(goToMap);
+                }
+
+
 
             }
         });

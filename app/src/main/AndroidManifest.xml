@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".SecondScreenActivity" />
         <activity android:name=".FullMapActivity" />
-        <activity android:name=".DesksPage"/>
+        <activity android:name=".DesksPage" />
+        <activity android:name=".GroundFloorRouteActivity" />
+        <activity android:name=".FirstFloorRouteActivity" />
+        <activity android:name=".TwoFloorsRouteActivity"></activity>
     </application>
 
 </manifest>
