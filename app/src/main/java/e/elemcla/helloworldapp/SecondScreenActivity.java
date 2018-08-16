@@ -3,6 +3,7 @@ package e.elemcla.helloworldapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +15,12 @@ public class SecondScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second_screen);
         Button theMapButton = (Button) findViewById(R.id.mapButton);
         Button theDesksButton = (Button) findViewById(R.id.desksButton);
+
+        if (getSupportActionBar() != null ) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
 
         theMapButton.setOnClickListener(new View.OnClickListener() {
 
@@ -34,5 +41,12 @@ public class SecondScreenActivity extends AppCompatActivity {
                 startActivity(deskIntent);
             }
         });
+
     }
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item){
+            if(item.getItemId()==android.R.id.home)
+                finish();
+            return super.onOptionsItemSelected(item);
+        }
 }
