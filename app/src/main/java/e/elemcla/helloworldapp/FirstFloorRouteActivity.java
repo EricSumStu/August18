@@ -2,6 +2,7 @@ package e.elemcla.helloworldapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -11,6 +12,11 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_floor_route);
+
+        if (getSupportActionBar() != null ) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
 
         int numOfPins = 4;
         ImageView[] pins = new ImageView[numOfPins];
@@ -38,5 +44,11 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
         } else {
             pins[2].setVisibility(View.VISIBLE);
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId()==android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
 }
