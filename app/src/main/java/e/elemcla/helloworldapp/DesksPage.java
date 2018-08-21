@@ -29,7 +29,13 @@ public class DesksPage extends AppCompatActivity {
         Spinner toDropDown = findViewById(R.id.toDropDown);
 
         //create list of zones for the spinners.
-        String[] zones = new String[]{"Zone 1", "Zone 2", "Zone 3","Zone 4","Zone 5","Zone 6","Zone 7","Zone 8","Zone 9"};
+        String[] zones = new String[]{"BY 01 - BY 41", "BY 42 - BY 69", "BY 70 - BY 97","BY 98 - BY 119",
+                "AT 01 - AT 21","AT 22 - AT 52",
+                "MX 01 - MX 18","MX 19 - MX 27","MX 28 - MX 43","MX 44 - MX 73",
+                "IN 01 - IN 41", "IN 42 - IN 79", "IN 80 - IN 139",
+                "MA 01 - MA 67", "MA 68 - MA 136", "MA 137 - MA 186",
+                "BE 01 - BE 64", "BE 65 - BE 106", "BE 107 - BE 147", "BE 148 - BE 202",
+                "ED 01 - ED 20", "ED 21 - ED 44", "ED 45 - ED 107"};
 
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
@@ -46,14 +52,14 @@ public class DesksPage extends AppCompatActivity {
                 firstOption = (String) fromDropDown.getSelectedItem();
                 secondOption = (String) toDropDown.getSelectedItem();
 
-                if (firstOption.equals("Zone 1") || firstOption.equals("Zone 2") || firstOption.equals("Zone 3") || firstOption.equals("Zone 4") || firstOption.equals("Zone 5") || firstOption.equals("Zone 6") || firstOption.equals("Zone 7")
-                        && secondOption.equals("Zone 1") || secondOption.equals("Zone 2") || secondOption.equals("Zone 3") || secondOption.equals("Zone 4") || secondOption.equals("Zone 5") || secondOption.equals("Zone 6") || secondOption.equals("Zone 7")){
+//                if (firstOption.equals("Desk 1A") || firstOption.equals("Zone 2") || firstOption.equals("Zone 3") || firstOption.equals("Zone 4") || firstOption.equals("Zone 5") || firstOption.equals("Zone 6") || firstOption.equals("Zone 7")
+//                        && secondOption.equals("Desk 1B") || secondOption.equals("Zone 2") || secondOption.equals("Zone 3") || secondOption.equals("Zone 4") || secondOption.equals("Zone 5") || secondOption.equals("Zone 6") || secondOption.equals("Zone 7")){
 
                     Intent goToGroundFloorRouteActivity = new Intent(DesksPage.this,GroundFloorRouteActivity.class);
                     startActivity(goToGroundFloorRouteActivity);
-                }
+//                }
 
-                else if (firstOption.equals("Zone 8") || firstOption.equals("Zone 9") && secondOption.equals("Zone 8") || secondOption.equals("Zone 9")){
+               /* else if (firstOption.equals("Zone 8") || firstOption.equals("Zone 9") && secondOption.equals("Zone 8") || secondOption.equals("Zone 9")){
 
                     Intent goToFirstFloorRouteActivity = new Intent(DesksPage.this,FirstFloorRouteActivity.class);
                     startActivity(goToFirstFloorRouteActivity);
@@ -61,7 +67,7 @@ public class DesksPage extends AppCompatActivity {
                 else {
                     Intent goToMap = new Intent(DesksPage.this,FullMapActivity.class);
                     startActivity(goToMap);
-                }
+                }*/
 
 
 
