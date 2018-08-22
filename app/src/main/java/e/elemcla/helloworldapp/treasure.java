@@ -36,29 +36,27 @@ public class treasure extends AppCompatActivity {
 
 
 
-//        if(isScanned) {
-//            switch (qr)
-//            {
-//                case "1":
-//                    System.out.println("Hint 1");
-//                    Toast.makeText(treasure.this, "You found hint 1", Toast.LENGTH_LONG);
-//
-//                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.apple));
-//                    textView.setText("You found hint 1");
-//
-//                case "2":
-//                    System.out.println("Hint 2");
-//
-//                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.orange));
-//                    textView.setText("You found hint 2");
-//
-//                case "3":
-//                    System.out.println("Hint 3");
-//
-//                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.redpin));
-//                    textView.setText("You found hint 3");
-//            }
-//        }
+            switch (qr)
+            {
+                case "1":
+                    System.out.println("Hint 1");
+                    Toast.makeText(treasure.this, "You found hint 1", Toast.LENGTH_LONG);
+
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.apple));
+                    textView.setText("You found hint 1");
+
+                case "2":
+                    System.out.println("Hint 2");
+
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.orange));
+                    textView.setText("You found hint 2");
+
+                case "3":
+                    System.out.println("Hint 3");
+
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.redpin));
+                    textView.setText("You found hint 3");
+            }
+        }
     }
 
-}

@@ -37,8 +37,8 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void handleResult(Result rawResult) {
 
-        qr =rawResult.getText();
-        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXX+qr");
+        qr =rawResult.getText().toString();
+        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXX"+qr);
         Intent myIntent = new Intent(ScanActivity.this, treasure.class);
         startActivity(myIntent);
     }
