@@ -2,6 +2,8 @@ package e.elemcla.helloworldapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class FirstFloorRouteActivity extends AppCompatActivity {
 
@@ -9,5 +11,32 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_floor_route);
+
+        int numOfPins = 4;
+        ImageView[] pins = new ImageView[numOfPins];
+
+        // storing pins in ImageView array
+
+        pins[0] = findViewById(R.id.zoneEightStart);
+        pins[1] = findViewById(R.id.zoneEightEnd);
+        pins[2] = findViewById(R.id.zoneNineStart);
+        pins[3] = findViewById(R.id.zoneNineEnd);
+
+        //getting the spinner options from deskspage activity
+
+        String fOption = DesksPage.firstOption;
+        String sOption = DesksPage.secondOption;
+
+        if (fOption.equals("Zone 8")) {
+            pins[1].setVisibility(View.VISIBLE);
+        } else {
+            pins[3].setVisibility(View.VISIBLE);
+        }
+
+        if (sOption.equals("Zone 8")){
+            pins[0].setVisibility(View.VISIBLE);
+        } else {
+            pins[2].setVisibility(View.VISIBLE);
+        }
     }
 }
