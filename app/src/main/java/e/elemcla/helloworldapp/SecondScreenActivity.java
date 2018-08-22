@@ -22,6 +22,7 @@ public class SecondScreenActivity extends AppCompatActivity {
         }
 
 
+
         theMapButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -41,7 +42,13 @@ public class SecondScreenActivity extends AppCompatActivity {
                 startActivity(deskIntent);
             }
         });
+        Button btn10 = (Button) findViewById(R.id.button);
 
+        btn10.setOnClickListener(view -> {
+            Intent intent = new Intent(SecondScreenActivity.this, ScanActivity.class);
+            startActivity(intent);
+
+        });
     }
         @Override
         public boolean onOptionsItemSelected(MenuItem item){

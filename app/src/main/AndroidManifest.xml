@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="e.elemcla.helloworldapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +24,12 @@
         <activity android:name=".DesksPage" />
         <activity android:name=".GroundFloorRouteActivity" />
         <activity android:name=".FirstFloorRouteActivity" />
-        <activity android:name=".TwoFloorsRouteActivity"></activity>
+        <activity android:name=".TwoFloorsRouteActivity" />
+        <activity
+            android:name=".treasure"
+            android:label="@string/title_activity_treasure"
+           />
+        <activity android:name=".ScanActivity"/>
     </application>
 
 </manifest>
