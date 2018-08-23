@@ -24,6 +24,8 @@
         android:layout_width="18dp"
         android:layout_height="26dp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/groundFloorMap"
+        app:layout_constraintEnd_toStartOf="@+id/groundFloorMap"
         app:layout_constraintStart_toStartOf="@+id/groundFloorMap"
         app:layout_constraintTop_toTopOf="@+id/groundFloorMap"
         app:srcCompat="@drawable/redpinone" />
@@ -32,6 +34,8 @@
         android:id="@+id/redPin"
         android:layout_width="18dp"
         android:layout_height="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/groundFloorMap"
+        app:layout_constraintEnd_toStartOf="@+id/groundFloorMap"
         app:layout_constraintStart_toStartOf="@+id/groundFloorMap"
         app:layout_constraintTop_toTopOf="@+id/groundFloorMap"
         app:srcCompat="@drawable/greenpinone" />

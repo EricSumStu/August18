@@ -11,10 +11,10 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class DesksPage extends AppCompatActivity {
-    static String firstOption;
-    static String secondOption;
-    static int firstOptionIndex;
-    static int secondOptionIndex;
+    public static String firstOption;
+    public static String secondOption;
+    public static int firstOptionIndex;
+    public static int secondOptionIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
