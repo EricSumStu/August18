@@ -56,7 +56,7 @@ public class treasure extends AppCompatActivity {
                     System.out.println("Hint 3");
                     Toast.makeText(treasure.this, "You found hint 3", Toast.LENGTH_LONG);
 
-                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.redpin));
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.ericsson_logo));
                     textView.setText("You found hint 3");
                     break;
 
