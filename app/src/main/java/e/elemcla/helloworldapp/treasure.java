@@ -26,36 +26,43 @@ public class treasure extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treasure);
 
-        Toast.makeText(treasure.this,"XXXXXXXXXXXXXXXXXXX"+qr,Toast.LENGTH_LONG);
 
 
         ImageView imageView = findViewById(R.id.imageView);
         TextView textView = findViewById(R.id.textView);
 
 
+        System.out.println(qr+"xxxxxxxxxxxxxx");
 
-
-
-            switch (qr)
+            switch (Integer.valueOf(qr))
             {
-                case "1":
+                case 1:
                     System.out.println("Hint 1");
                     Toast.makeText(treasure.this, "You found hint 1", Toast.LENGTH_LONG);
 
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.apple));
                     textView.setText("You found hint 1");
+                    break;
 
-                case "2":
+                case 2:
                     System.out.println("Hint 2");
+                    Toast.makeText(treasure.this, "You found hint 2", Toast.LENGTH_LONG);
 
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.orange));
                     textView.setText("You found hint 2");
+                    break;
 
-                case "3":
+                case 3:
                     System.out.println("Hint 3");
+                    Toast.makeText(treasure.this, "You found hint 3", Toast.LENGTH_LONG);
 
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.redpin));
                     textView.setText("You found hint 3");
+                    break;
+
+               default:
+                   System.out.println("Not a hint isbn");
+                   break;
             }
         }
     }
