@@ -1,21 +1,20 @@
 package e.elemcla.helloworldapp;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class DesksPage extends AppCompatActivity {
     static String firstOption;
     static String secondOption;
+    static int firstOptionIndex;
+    static int secondOptionIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class DesksPage extends AppCompatActivity {
                 "Zone 5","MA 01 - MA 67","MA 68 - MA 136", "MA 137 - MA 186", //i 17 - 20
                 "Zone 6","BE 01 - BE 64","BE 65 - BE 106", "BE 107 - BE 147", "BE 148 - BE 202", //i 21 - 25
                 "Zone 7","ED 01 - ED 20","ED 21 - ED 44", "ED 45 - ED 107", //i 26 - 29
-                "Zone 8","FA 01 - FA 42","FA 43 - 124", //i 30 - 33
+                "Zone 8","FA 01 - FA 42","FA 43 - FA 124", //i 30 - 33
                 "Zone 9","BO 01 - BO 26","BO 27 - BO 49","BO 50 - BO 74","BO 75 - BO 118"}; //i 34 - 38
 
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
@@ -58,48 +57,35 @@ public class DesksPage extends AppCompatActivity {
                 firstOption = (String) fromDropDown.getSelectedItem();
                 secondOption = (String) toDropDown.getSelectedItem();
 
+                firstOptionIndex = fromDropDown.getSelectedItemPosition();
+                secondOptionIndex = toDropDown.getSelectedItemPosition();
 
-                int fiOption = fromDropDown.getSelectedItemPosition();
-                int seOption = toDropDown.getSelectedItemPosition();
-
-                if (fiOption == 0 || fiOption == 5 || fiOption == 8 || fiOption == 13 || fiOption == 17 || fiOption == 21 || fiOption == 26 ||
-                        seOption == 0 || seOption == 5 || seOption == 8 || seOption == 13 || seOption == 17 || seOption == 21 || seOption == 26 ){
+                if (firstOptionIndex == 0 || firstOptionIndex == 5 || firstOptionIndex == 8 || firstOptionIndex == 13 || firstOptionIndex == 17 || firstOptionIndex == 21 || firstOptionIndex == 26 || firstOptionIndex == 30 || firstOptionIndex == 33 ||
+                        secondOptionIndex == 0 || secondOptionIndex == 5 || secondOptionIndex == 8 || secondOptionIndex == 13 || secondOptionIndex == 17 || secondOptionIndex == 21 || secondOptionIndex == 26 || secondOptionIndex == 30 || secondOptionIndex == 33){
                     Toast.makeText(DesksPage.this,"Invalid Choice: Please Choose Correct Set of Desks",Toast.LENGTH_LONG).show();
                 }
+
                 else{
-                    if (fiOption == 1 || fiOption == 2 || fiOption == 3 || fiOption == 4 || fiOption == 6 || fiOption == 7 ||
-                            fiOption == 8 ||  fiOption == 9 || fiOption == 10 || fiOption == 11 || fiOption == 12 ||
-                            fiOption == 14 || fiOption == 15 || fiOption == 16 || fiOption == 18 || fiOption == 19 ||
-                            fiOption == 20 ||  fiOption == 22 || fiOption == 23 || fiOption == 24 || fiOption == 25 ||
-                            fiOption == 27 || fiOption == 28 || fiOption == 29
 
-                            &&
-
-                            seOption == 1 || seOption == 2 || seOption == 3 || seOption == 4 || seOption == 6 || seOption == 7 ||
-                            seOption == 8 ||  seOption == 9 || seOption == 10 || seOption == 11 || seOption == 12 ||
-                            seOption == 14 || seOption == 15 || seOption == 16 || seOption == 18 || seOption == 19 ||
-                            seOption == 20 ||  seOption == 22 || seOption == 23 || seOption == 24 || seOption == 25 ||
-                            seOption == 27 || seOption == 28 || seOption == 29 ) {
-
+                    if ((firstOptionIndex >=1 && firstOptionIndex<=29)  && (secondOptionIndex >=1 && secondOptionIndex<=29)){
                         Intent goToGroundFloorRouteActivity = new Intent(DesksPage.this,GroundFloorRouteActivity.class);
                         startActivity(goToGroundFloorRouteActivity);
                     }
 
-                    else if (fiOption == 23 || fiOption == 24 || fiOption == 25 || fiOption == 26 || fiOption == 27 || fiOption == 28
-                            && seOption == 23 || seOption == 24 || seOption == 25 || seOption == 26 || seOption == 27 || seOption == 28){
-
-                        Intent goToGroundFloorRouteActivity = new Intent(DesksPage.this,FirstFloorRouteActivity.class);
-                        startActivity(goToGroundFloorRouteActivity);
+                    else if ((firstOptionIndex >= 31 && firstOptionIndex <= 37) && (secondOptionIndex >= 31 && secondOptionIndex <= 37)){
+                        Intent goToFirstFloorRouteActivity = new Intent(DesksPage.this,FirstFloorRouteActivity.class);
+                        startActivity(goToFirstFloorRouteActivity);
                     }
 
                     else {
-                        Intent goToMap = new Intent(DesksPage.this,FullMapActivity.class);
-                        startActivity(goToMap);
+                        Intent goToFullMap = new Intent(DesksPage.this,TwoFloorsRouteActivity.class);
+                        startActivity(goToFullMap);
                     }
                 }
             }
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         if(item.getItemId()==android.R.id.home)
