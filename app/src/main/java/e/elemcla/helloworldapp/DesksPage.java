@@ -51,6 +51,7 @@ public class DesksPage extends AppCompatActivity {
         toDropDown.setAdapter(adapter);
         Button theGoButton = findViewById(R.id.goButton);
 
+
         theGoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
