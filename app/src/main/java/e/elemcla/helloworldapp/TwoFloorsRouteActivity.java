@@ -26,16 +26,16 @@ public class TwoFloorsRouteActivity extends AppCompatActivity {
 
         DeskRow[] zones = new DeskRow[9];
 
-        zones[0] = new DeskRow("Zone 1", 100, 576);
-        zones[1] = new DeskRow("Zone 2", 160, 630);
-        zones[2] = new DeskRow("Zone 3", 210, 470);
-        zones[3] = new DeskRow("Zone 4", 400, 650);
-        zones[4] = new DeskRow("Zone 5", 435, 467);
+        zones[0] = new DeskRow("Zone 1", 16, 190);
+        zones[1] = new DeskRow("Zone 2", 48, 216);
+        zones[2] = new DeskRow("Zone 3", 68, 188);
+        zones[3] = new DeskRow("Zone 4", 144, 224);
+        zones[4] = new DeskRow("Zone 5", 160, 120);
         zones[5] = new DeskRow("Zone 6", 650, 650);
-        zones[6] = new DeskRow("Zone 7", 450, 880);
 
-        zones[7] = new DeskRow("Zone 8", 810, 600);
-        zones[8] = new DeskRow("Zone 9", 980, 600);
+        zones[6] = new DeskRow("Zone 7", 124,230);
+        zones[7] = new DeskRow("Zone 8", 76, 187);
+        zones[8] = new DeskRow("Zone 9", 16, 187);
 
 
         int fromOption = DesksPage.firstOptionIndex;

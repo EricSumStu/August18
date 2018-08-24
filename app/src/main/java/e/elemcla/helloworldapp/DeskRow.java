@@ -2,23 +2,26 @@ package e.elemcla.helloworldapp;
 
 public class DeskRow {
     String deskName;
-    int xCoordinate;
-    int yCoordinate;
+    int leftCoordinate;
+    int topCoordinate;
+    int rightCoordinate;
+    int bottomCoordinate;
 
 
-    public DeskRow(String deskName,int xCoordinate, int yCoordinate){
+    public DeskRow(String deskName,    int leftCoordinate,int topCoordinate,int rightCoordinate,int bottomCoordinate
+    ){
         this.deskName=deskName;
-        this.xCoordinate=xCoordinate;
-        this.yCoordinate=yCoordinate;
+        this.leftCoordinate=leftCoordinate;
+        this.topCoordinate=topCoordinate;
+        this.rightCoordinate=rightCoordinate;
+        this.bottomCoordinate=bottomCoordinate;
     }
 
     public String getDeskName() {
         return deskName;
     }
-    public int getxCoordinate() {
-        return xCoordinate;
-    }
-    public int getyCoordinate() {
-        return yCoordinate;
-    }
+    public int getleftCoordinate() {return leftCoordinate;}
+    public int gettopCoordinate() {return topCoordinate;}
+    public int getrightCoordinate() {return rightCoordinate;}
+    public int getbottomCoordinate() {return bottomCoordinate;}
 }
