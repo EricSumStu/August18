@@ -15,6 +15,7 @@ public class SecondScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second_screen);
         Button theMapButton = (Button) findViewById(R.id.mapButton);
         Button theDesksButton = (Button) findViewById(R.id.desksButton);
+        Button theScanButton = (Button) findViewById(R.id.scanButton);
 
         if (getSupportActionBar() != null ) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -25,9 +26,7 @@ public class SecondScreenActivity extends AppCompatActivity {
 
         theMapButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 Intent mapIntent = new Intent(SecondScreenActivity.this,FullMapActivity.class);
                 startActivity(mapIntent);
             }
@@ -35,16 +34,14 @@ public class SecondScreenActivity extends AppCompatActivity {
 
         theDesksButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 Intent deskIntent = new Intent(SecondScreenActivity.this,DesksPage.class);
                 startActivity(deskIntent);
             }
         });
-        Button btn10 = (Button) findViewById(R.id.button);
 
-        btn10.setOnClickListener(view -> {
+
+        theScanButton.setOnClickListener(view -> {
             Intent intent = new Intent(SecondScreenActivity.this, ScanActivity.class);
             startActivity(intent);
 
