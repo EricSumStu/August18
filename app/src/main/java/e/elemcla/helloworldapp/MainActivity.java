@@ -102,8 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 if(
                         (grantResults.length >0) &&
                                 (grantResults[0]
-                                        + grantResults[1]
-                                        + grantResults[2]
+
                                         == PackageManager.PERMISSION_GRANTED
                                 )
                         ) {
