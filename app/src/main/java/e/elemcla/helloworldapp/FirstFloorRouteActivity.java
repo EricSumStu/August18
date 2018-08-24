@@ -20,13 +20,13 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        DeskRow row24 = new DeskRow("FA 01 - FA 42",360,725 - 525);
-        DeskRow row25 = new DeskRow("FA 43 - FA 124",360,1500 - 525); // is nott WORKINGGGG
+        DeskRow row24 = new DeskRow("FA 01 - FA 42",164,82,0,0);
+        DeskRow row25 = new DeskRow("FA 43 - FA 124",84,0,0,204); // is nott WORKINGGGG
 
-        DeskRow row26 = new DeskRow("BO 01 - BO 26",726,695 - 525);
-        DeskRow row27 = new DeskRow("BO 27 - BO 49",726,905 - 525);
-        DeskRow row28 = new DeskRow("BO 50 - BO 74",726,1215- 525);
-        DeskRow row29 = new DeskRow("BO 75 - BO 118",726,1850 - 525);
+        DeskRow row26 = new DeskRow("BO 01 - BO 26",0,60,72,0);
+        DeskRow row27 = new DeskRow("BO 27 - BO 49",0,138,60,0);
+        DeskRow row28 = new DeskRow("BO 50 - BO 74",0,0,73,123);
+        DeskRow row29 = new DeskRow("BO 75 - BO 118",0,0,70,47);
 
         DeskRow[] deskset=new DeskRow[6];
 
