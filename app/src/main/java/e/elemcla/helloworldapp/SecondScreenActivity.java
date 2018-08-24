@@ -16,6 +16,7 @@ public class SecondScreenActivity extends AppCompatActivity {
         Button theMapButton = (Button) findViewById(R.id.mapButton);
         Button theDesksButton = (Button) findViewById(R.id.desksButton);
 
+
         if (getSupportActionBar() != null ) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
