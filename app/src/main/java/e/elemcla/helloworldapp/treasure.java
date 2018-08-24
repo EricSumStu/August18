@@ -60,6 +60,7 @@ public class treasure extends AppCompatActivity {
                     System.out.println("Hint 3");
                     Toast.makeText(treasure.this, "You found hint 3", Toast.LENGTH_LONG);
 
+
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.brickwall));
                     textView.setText("Ok you've found the first 2...don't get cocky now we're just getting started. Hint 3:'Mr. Gorbachev  -tear down this wall.' - Ronald Reagan" );
 
@@ -181,6 +182,8 @@ public class treasure extends AppCompatActivity {
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.medel));
                     textView.setText("Congratulations!!! Winner winner, chicken dinner, go to reception to collect your prize");
 
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.ericsson_logo));
+                    textView.setText("You found hint 3");
                     break;
 
                default:
