@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
-import static e.elemcla.helloworldapp.GroundFloorRouteActivity.addToYcoord;
 
 public class FirstFloorRouteActivity extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
         }
 
         DeskRow row24 = new DeskRow("FA 01 - FA 42",164,82,0,0);
-        DeskRow row25 = new DeskRow("FA 43 - FA 124",84,0,0,204); // is nott WORKINGGGG
+        DeskRow row25 = new DeskRow("FA 43 - FA 124",84,0,0,204);
 
         DeskRow row26 = new DeskRow("BO 01 - BO 26",0,60,72,0);
         DeskRow row27 = new DeskRow("BO 27 - BO 49",0,138,60,0);
@@ -49,13 +49,20 @@ public class FirstFloorRouteActivity extends AppCompatActivity {
 
         for(DeskRow desk : deskset ){
             if(desk.getDeskName().equals(fOption)){
-                pins[0].setTranslationX(desk.getxCoordinate());
-                pins[0].setTranslationY(desk.getyCoordinate());
-
+                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                        RelativeLayout.LayoutParams.WRAP_CONTENT,
+                        RelativeLayout.LayoutParams.WRAP_CONTENT
+                );
+                params.setMargins(desk.getleftCoordinate(),desk.gettopCoordinate(),desk.getrightCoordinate(),desk.getbottomCoordinate());
+                pins[0].setLayoutParams(params);
             }
             if(desk.getDeskName().equals(sOption)){
-                pins[1].setTranslationX(desk.getxCoordinate());
-                pins[1].setTranslationY(desk.getyCoordinate());
+                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                        RelativeLayout.LayoutParams.WRAP_CONTENT,
+                        RelativeLayout.LayoutParams.WRAP_CONTENT
+                );
+                params.setMargins(desk.getleftCoordinate(),desk.gettopCoordinate(),desk.getrightCoordinate(),desk.getbottomCoordinate());
+                pins[1].setLayoutParams(params);
             }
         }
     }
