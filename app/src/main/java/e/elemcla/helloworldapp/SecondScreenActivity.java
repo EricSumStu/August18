@@ -43,7 +43,7 @@ public class SecondScreenActivity extends AppCompatActivity {
 
 
         theScanButton.setOnClickListener(view -> {
-            Intent intent = new Intent(SecondScreenActivity.this, ScanActivity.class);
+            Intent intent = new Intent(SecondScreenActivity.this, TreasureHuntGame.class);
             startActivity(intent);
 
         });

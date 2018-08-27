@@ -28,8 +28,8 @@ public class DesksPage extends AppCompatActivity {
         }
 
         //get the 2 spinners [FROM & TO] from the xml.
-        Spinner fromDropDown = findViewById(R.id.fromDropDown);
-        Spinner toDropDown = findViewById(R.id.toDropDown);
+        Spinner fromDrop = findViewById(R.id.fromDropDown);
+        Spinner toDrop = findViewById(R.id.toDropDown);
 
         //create list of zones for the spinners.
         String[] zones = new String[]{"Zone 1","BY 01 - BY 41", "BY 42 - BY 69", "BY 70 - BY 97","BY 98 - BY 119", //i 0 - 4
@@ -47,19 +47,19 @@ public class DesksPage extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, zones);
 
         //set the spinners adapter to the previously created one.
-        fromDropDown.setAdapter(adapter);
-        toDropDown.setAdapter(adapter);
+        fromDrop.setAdapter(adapter);
+        toDrop.setAdapter(adapter);
         Button theGoButton = findViewById(R.id.goButton);
 
 
         theGoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                firstOption = (String) fromDropDown.getSelectedItem();
-                secondOption = (String) toDropDown.getSelectedItem();
+                firstOption = (String) fromDrop.getSelectedItem();
+                secondOption = (String) toDrop.getSelectedItem();
 
-                firstOptionIndex = fromDropDown.getSelectedItemPosition();
-                secondOptionIndex = toDropDown.getSelectedItemPosition();
+                firstOptionIndex = fromDrop.getSelectedItemPosition();
+                secondOptionIndex = toDrop.getSelectedItemPosition();
 
                 if (firstOptionIndex == 0 || firstOptionIndex == 5 || firstOptionIndex == 8 || firstOptionIndex == 13 || firstOptionIndex == 17 || firstOptionIndex == 21 || firstOptionIndex == 26 || firstOptionIndex == 30 || firstOptionIndex == 33 ||
                         secondOptionIndex == 0 || secondOptionIndex == 5 || secondOptionIndex == 8 || secondOptionIndex == 13 || secondOptionIndex == 17 || secondOptionIndex == 21 || secondOptionIndex == 26 || secondOptionIndex == 30 || secondOptionIndex == 33){
