@@ -98,7 +98,7 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
                 pins[1].setTranslationY(desk.getyCoordinate());
             }
         }
-
+//Zone 1
         if((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
                 && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52") ){
             ImageView pathOne = (ImageView)findViewById(R.id.pathImage);
@@ -129,6 +129,7 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
             ImageView pathSix = (ImageView)findViewById(R.id.pathImage6);
             pathSix.setImageResource(R.drawable.zone1to7);
         }
+        //Zone 2
         else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
                 && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
             ImageView pathSeven = (ImageView)findViewById(R.id.pathImage7);
@@ -158,6 +159,37 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
                 && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
             ImageView pathTwelve = (ImageView)findViewById(R.id.pathImage12);
             pathTwelve.setImageResource(R.drawable.zone2to7);
+        }
+//Zone 3
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathThirteen = (ImageView)findViewById(R.id.pathImage13);
+            pathThirteen.setImageResource(R.drawable.zone3to1);
+        }
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52")){
+            ImageView pathFourteen = (ImageView)findViewById(R.id.pathImage14);
+            pathFourteen.setImageResource(R.drawable.zone3to2);
+        }
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathFifteen = (ImageView)findViewById(R.id.pathImage15);
+            pathFifteen.setImageResource(R.drawable.zone3to4);
+        }
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathSixteen = (ImageView)findViewById(R.id.pathImage16);
+            pathSixteen.setImageResource(R.drawable.zone3to5);
+        }
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathSeventeen = (ImageView)findViewById(R.id.pathImage17);
+            pathSeventeen.setImageResource(R.drawable.zone3to6);
+        }
+        else if ((fOption.equals("MX 01 - MX 18")|| fOption.equals("MX 19 - MX 27")|| fOption.equals("MX 28 - MX 43")|| fOption.equals("MX 44 - MX 73"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathEightteen = (ImageView)findViewById(R.id.pathImage18);
+            pathEightteen.setImageResource(R.drawable.zone3to7);
         }
 
     }
