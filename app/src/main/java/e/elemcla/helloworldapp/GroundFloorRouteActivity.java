@@ -129,6 +129,36 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
             ImageView pathSix = (ImageView)findViewById(R.id.pathImage6);
             pathSix.setImageResource(R.drawable.zone1to7);
         }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathSeven = (ImageView)findViewById(R.id.pathImage7);
+            pathSeven.setImageResource(R.drawable.zone2to1);
+        }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathEight = (ImageView)findViewById(R.id.pathImage8);
+            pathEight.setImageResource(R.drawable.zone2to3);
+        }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathNine = (ImageView)findViewById(R.id.pathImage9);
+            pathNine.setImageResource(R.drawable.zone2to4);
+        }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathTen = (ImageView)findViewById(R.id.pathImage10);
+            pathTen.setImageResource(R.drawable.zone2to5);
+        }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathEleven = (ImageView)findViewById(R.id.pathImage11);
+            pathEleven.setImageResource(R.drawable.zone2to6);
+        }
+        else if ((fOption.equals("AT 01 - AT 21")|| fOption.equals("AT 22 - AT 52"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathTwelve = (ImageView)findViewById(R.id.pathImage12);
+            pathTwelve.setImageResource(R.drawable.zone2to7);
+        }
 
     }
     @Override
