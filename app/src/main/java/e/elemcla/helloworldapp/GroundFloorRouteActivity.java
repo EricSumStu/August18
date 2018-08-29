@@ -1,9 +1,8 @@
 package e.elemcla.helloworldapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 
 public class GroundFloorRouteActivity extends AppCompatActivity {
@@ -12,6 +11,10 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ground_floor_route);
+
+
+
+
 
         if (getSupportActionBar() != null ) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -95,6 +98,38 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
                 pins[1].setTranslationY(desk.getyCoordinate());
             }
         }
+
+        if((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52") ){
+            ImageView pathOne = (ImageView)findViewById(R.id.pathImage);
+            pathOne.setImageResource(R.drawable.zone1to2);
+        }
+        else if ((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathTwo = (ImageView)findViewById(R.id.pathImage2);
+            pathTwo.setImageResource(R.drawable.zone1to3);
+        }
+        else if ((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathThree = (ImageView)findViewById(R.id.pathImage3);
+            pathThree.setImageResource(R.drawable.zone1to4);
+        }
+        else if ((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathFour = (ImageView)findViewById(R.id.pathImage4);
+            pathFour.setImageResource(R.drawable.zone1to5);
+        }
+        else if ((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathFive = (ImageView)findViewById(R.id.pathImage5);
+            pathFive.setImageResource(R.drawable.zone1to6);
+        }
+        else if ((fOption.equals("BY 01 - BY 41")|| fOption.equals("BY 42 - BY 69")|| fOption.equals("BY 70 - BY 97") || fOption.equals("BY 98 - BY 119"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathSix = (ImageView)findViewById(R.id.pathImage6);
+            pathSix.setImageResource(R.drawable.zone1to7);
+        }
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
