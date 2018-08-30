@@ -284,7 +284,37 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
             ImageView pathThirtySix = (ImageView)findViewById(R.id.pathImage36);
             pathThirtySix.setImageResource(R.drawable.zone6to7);
         }
-
+        //Zone7
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathThirtySeven = (ImageView)findViewById(R.id.pathImage37);
+            pathThirtySeven.setImageResource(R.drawable.zone7to1);
+        }
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52")){
+            ImageView pathThirtyEight = (ImageView)findViewById(R.id.pathImage38);
+            pathThirtyEight.setImageResource(R.drawable.zone7to2);
+        }
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathThirtyNine = (ImageView)findViewById(R.id.pathImage39);
+            pathThirtyNine.setImageResource(R.drawable.zone7to3);
+        }
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathForty = (ImageView)findViewById(R.id.pathImage40);
+            pathForty.setImageResource(R.drawable.zone7to4);
+        }
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathFortyOne = (ImageView)findViewById(R.id.pathImage41);
+            pathFortyOne.setImageResource(R.drawable.zone7to5);
+        }
+        else if ((fOption.equals("ED 01 - ED 20")|| fOption.equals("ED 21 - ED 44")|| fOption.equals("ED 45 - ED 107"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathFortyTwo = (ImageView)findViewById(R.id.pathImage42);
+            pathFortyTwo.setImageResource(R.drawable.zone7to6);
+        }
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
