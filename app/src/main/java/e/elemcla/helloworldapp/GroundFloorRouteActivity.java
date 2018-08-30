@@ -191,6 +191,70 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
             ImageView pathEightteen = (ImageView)findViewById(R.id.pathImage18);
             pathEightteen.setImageResource(R.drawable.zone3to7);
         }
+        //Zone 4
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathNineteen = (ImageView)findViewById(R.id.pathImage19);
+            pathNineteen.setImageResource(R.drawable.zone4to1);
+        }
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52")){
+            ImageView pathTwenty = (ImageView)findViewById(R.id.pathImage20);
+            pathTwenty.setImageResource(R.drawable.zone4to2);
+        }
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathTwentyOne = (ImageView)findViewById(R.id.pathImage21);
+            pathTwentyOne.setImageResource(R.drawable.zone4to3);
+        }
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathTwentyTwo = (ImageView)findViewById(R.id.pathImage22);
+            pathTwentyTwo.setImageResource(R.drawable.zone4to5);
+        }
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathTwentyThree = (ImageView)findViewById(R.id.pathImage23);
+            pathTwentyThree.setImageResource(R.drawable.zone4to6);
+        }
+        else if ((fOption.equals("IN 01 - IN 41")|| fOption.equals("IN 42 - IN 79")|| fOption.equals("IN 80 - IN 139"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathTwentyFour = (ImageView)findViewById(R.id.pathImage24);
+            pathTwentyFour.setImageResource(R.drawable.zone4to7);
+        }
+//Zone 5
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathTwentyFive = (ImageView)findViewById(R.id.pathImage25);
+            pathTwentyFive.setImageResource(R.drawable.zone5to1);
+        }
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52")){
+            ImageView pathTwentySix = (ImageView)findViewById(R.id.pathImage26);
+            pathTwentySix.setImageResource(R.drawable.zone5to2);
+        }
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathTwentySeven = (ImageView)findViewById(R.id.pathImage27);
+            pathTwentySeven.setImageResource(R.drawable.zone5to3);
+        }
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathTwentyEight = (ImageView)findViewById(R.id.pathImage28);
+            pathTwentyEight.setImageResource(R.drawable.zone5to4);
+        }
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("BE 01 - BE 64") || sOption.equals("BE 65 - BE 106") || sOption.equals("BE 107 - BE 147")|| sOption.equals("BE 148 - BE 202")){
+            ImageView pathTwentyNine = (ImageView)findViewById(R.id.pathImage29);
+            pathTwentyNine.setImageResource(R.drawable.zone5to6);
+        }
+        else if ((fOption.equals("MA 01 - MA 67")|| fOption.equals("MA 68 - MA 136")|| fOption.equals("MA 137 - MA 186"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathThirty = (ImageView)findViewById(R.id.pathImage30);
+            pathThirty.setImageResource(R.drawable.zone5to7);
+        }
+
+
 
     }
     @Override
