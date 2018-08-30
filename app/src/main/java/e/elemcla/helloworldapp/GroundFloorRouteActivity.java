@@ -253,8 +253,37 @@ public class GroundFloorRouteActivity extends AppCompatActivity {
             ImageView pathThirty = (ImageView)findViewById(R.id.pathImage30);
             pathThirty.setImageResource(R.drawable.zone5to7);
         }
-
-
+//Zone6
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("BY 01 - BY 41") || sOption.equals("BY 42 - BY 69") || sOption.equals("BY 70 - BY 97")|| sOption.equals("BY 98 - BY 119")){
+            ImageView pathThirtyOne = (ImageView)findViewById(R.id.pathImage31);
+            pathThirtyOne.setImageResource(R.drawable.zone6to1);
+        }
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("AT 01 - AT 21") || sOption.equals("AT 22 - AT 52")){
+            ImageView pathThirtyTwo = (ImageView)findViewById(R.id.pathImage32);
+            pathThirtyTwo.setImageResource(R.drawable.zone6to2);
+        }
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("MX 01 - MX 18") || sOption.equals("MX 19 - MX 27") || sOption.equals("MX 28 - MX 43")|| sOption.equals("MX 44 - MX 73")){
+            ImageView pathThirtyThree = (ImageView)findViewById(R.id.pathImage33);
+            pathThirtyThree.setImageResource(R.drawable.zone6to3);
+        }
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("IN 01 - IN 41") || sOption.equals("IN 42 - IN 79") || sOption.equals("IN 80 - IN 139")){
+            ImageView pathThirtyFour = (ImageView)findViewById(R.id.pathImage34);
+            pathThirtyFour.setImageResource(R.drawable.zone6to4);
+        }
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("MA 01 - MA 67") || sOption.equals("MA 68 - MA 136") || sOption.equals("MA 137 - MA 186")){
+            ImageView pathThirtyFive = (ImageView)findViewById(R.id.pathImage35);
+            pathThirtyFive.setImageResource(R.drawable.zone6to5);
+        }
+        else if ((fOption.equals("BE 01 - BE 64")|| fOption.equals("BE 65 - BE 106")|| fOption.equals("BE 107 - BE 147") || fOption.equals("BE 148 - BE 202"))
+                && sOption.equals("ED 01 - ED 20") || sOption.equals("ED 21 - ED 44") || sOption.equals("ED 45 - ED 107")){
+            ImageView pathThirtySix = (ImageView)findViewById(R.id.pathImage36);
+            pathThirtySix.setImageResource(R.drawable.zone6to7);
+        }
 
     }
     @Override
